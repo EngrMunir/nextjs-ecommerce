@@ -1,6 +1,5 @@
 import { z } from "zod";
 
-
 export const registerSchema =  z.object({
     name: z.string({required_error: "First name is required"})
     .min(2,"First name must be between 2 and 50 characters")
